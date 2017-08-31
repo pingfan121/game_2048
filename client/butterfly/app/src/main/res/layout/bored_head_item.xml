@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="10dp"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/iv_face"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/aixin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="TextView"/>
+
+            <TextView
+                android:id="@+id/tv_rownum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"/>
+        </LinearLayout>
+
+        <pf.com.butterfly.component.ComQiPao_Text
+            android:id="@+id/com_qipao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+        </pf.com.butterfly.component.ComQiPao_Text>
+
+    </LinearLayout>
+
+</LinearLayout>

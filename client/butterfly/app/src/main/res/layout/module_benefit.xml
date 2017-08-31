@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_white">
+
+    <include
+        android:id="@+id/benefit_head"
+        layout="@layout/benefit_head"
+        />
+    <include
+        android:id="@+id/benefit_detail"
+        layout="@layout/benefit_detail"
+        />
+    <include
+        android:id="@+id/benefit_proof"
+        layout="@layout/benefit_proof"
+        />
+    <include
+        android:id="@+id/benefit_falsify"
+        layout="@layout/benefit_falsify"
+        />
+    <include
+        android:id="@+id/benefit_donation"
+        layout="@layout/benefit_donation"
+        />
+
+
+
+</FrameLayout>

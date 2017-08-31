@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_ground"
+    android:visibility="invisible">
+
+    <!--各种视图组件 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_test"
+        android:textStyle="normal"
+        android:background="@null"
+        android:focusable="true"/>
+
+    <!--<pf.com.butterfly.component.HtmlEditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/view" />-->
+
+    <!--关闭按钮 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="X"
+            android:id="@+id/btn_close"
+         />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="图"
+            android:id="@+id/btn_tupian" />
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

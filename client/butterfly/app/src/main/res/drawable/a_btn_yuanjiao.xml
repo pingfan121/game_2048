@@ -1,0 +1,63 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<solid android:color="#faa755" />-->
+    <!--<corners android:topLeftRadius="5dp"-->
+             <!--android:topRightRadius="5dp"-->
+             <!--android:bottomRightRadius="5dp"-->
+             <!--android:bottomLeftRadius="5dp"/>-->
+
+<!--</shape>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <!--&lt;!&ndash; 渐变 &ndash;&gt;-->
+            <!--<gradient-->
+                <!--android:startColor="#ff8c00"-->
+                <!--android:endColor="#FFFFFF"-->
+                <!--android:type="radial"-->
+                <!--android:gradientRadius="50"/>-->
+            <!--&lt;!&ndash; 描边 &ndash;&gt;-->
+            <!--<stroke-->
+                <!--android:width="2dp"-->
+                <!--android:color="#dcdcdc"-->
+                <!--android:dashWidth="5dp"-->
+                <!--android:dashGap="3dp"/>-->
+            <!-- 圆角 -->
+            <solid android:color="#fedcbd" />
+            <corners android:topLeftRadius="5dp"
+                     android:topRightRadius="5dp"
+                     android:bottomRightRadius="5dp"
+                     android:bottomLeftRadius="5dp"/>
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape>
+            <!--<gradient-->
+                <!--android:startColor="#ffc2b7"-->
+                <!--android:endColor="#ffc2b7"-->
+                <!--android:angle="270"/>-->
+            <!--<stroke-->
+                <!--android:width="2dp"-->
+                <!--android:color="#dcdcdc"/>-->
+            <solid android:color="#fedcbd" />
+            <corners android:topLeftRadius="5dp"
+                     android:topRightRadius="5dp"
+                     android:bottomRightRadius="5dp"
+                     android:bottomLeftRadius="5dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="#faa755" />
+            <corners android:topLeftRadius="5dp"
+                     android:topRightRadius="5dp"
+                     android:bottomRightRadius="5dp"
+                     android:bottomLeftRadius="5dp"/>
+        </shape>
+    </item>
+</selector>
+
+

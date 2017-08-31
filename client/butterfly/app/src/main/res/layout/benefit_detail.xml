@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="New Text"
+        android:id="@+id/tv_detail" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="证明"
+            android:id="@+id/btn_true"
+            android:background="@color/app_green"
+            android:clickable="true"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="捐款"
+            android:id="@+id/btn_juankuan"
+            android:background="@color/app_green"
+            android:clickable="true"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="证伪"
+            android:id="@+id/btn_false"
+            android:background="@color/app_green"
+            android:clickable="true"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</FrameLayout>

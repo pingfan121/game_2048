@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8DC8137-ACF3-46C5-A153-FBD8EA74A3A8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hudie</RootNamespace>
+    <AssemblyName>hudie</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\publish\server\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\publish\server\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app\GlobalApp.cs" />
+    <Compile Include="app\info\info_2048_rank.cs" />
+    <Compile Include="app\info\info_bored.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\info\info_bored_voice.cs" />
+    <Compile Include="app\info\info_test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\info\res_advice_add.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\info\res_bored_add.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\info\res_bored_addvoice.cs" />
+    <Compile Include="app\info\res_bored_getlist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\info\res_bored_voicelist.cs" />
+    <Compile Include="app\info\res_g2048_rank.cs" />
+    <Compile Include="app\info\res_user_login.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\info\res_user_test2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\info\res_user_userinfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\info\res_user_wx_login.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\MapAppMsg.cs" />
+    <Compile Include="app\MapAppMsg2.cs" />
+    <Compile Include="app\module\advice\advice.cs" />
+    <Compile Include="app\module\advice\advice_add.cs" />
+    <Compile Include="app\module\game\g2048\g2048.cs" />
+    <Compile Include="app\module\game\g2048\g2048_rank.cs" />
+    <Compile Include="app\module\modulebase.cs" />
+    <Compile Include="app\module\user\user.cs" />
+    <Compile Include="app\module\user\user_wx_login.cs" />
+    <Compile Include="cache\Cache.cs" />
+    <Compile Include="cache\CacheData.cs" />
+    <Compile Include="cache\TokenCache.cs" />
+    <Compile Include="dbfile\dblogic\benefit\TbAppAdvice.cs" />
+    <Compile Include="dbfile\dblogic\benefit\TbAppLoginLog.cs" />
+    <Compile Include="dbfile\dblogic\benefit\TbAppUser.cs" />
+    <Compile Include="dbfile\dblogic\benefit\TbBoredHead.cs" />
+    <Compile Include="dbfile\dblogic\benefit\TbBoredVoice.cs" />
+    <Compile Include="dbfile\dblogic\benefit\TbGame2048Rank.cs" />
+    <Compile Include="dbfile\sql_struct.cs" />
+    <Compile Include="enum\EnumMsgState.cs" />
+    <Compile Include="app\GameApp.cs" />
+    <Compile Include="message\ProtocolsReq\deng_lu\login_weixin_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\jian_yi\advise_cteate_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\gong_yi\benefit_detail_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\gong_yi\benefit_head_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\gong_yi\benefit_proof_discuss_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\gong_yi\benefit_theme_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\deng_lu\login_req_fun.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="message\ProtocolsReq\deng_lu\register_req_fun.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="message\ProtocolsReq\wu_liao\bored_head_items_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\wu_liao\bored_head_item_add_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\wu_liao\bored_record_items_req_fun.cs" />
+    <Compile Include="message\ProtocolsReq\wu_liao\bored_record_item_add_req_fun.cs" />
+    <Compile Include="message\Protocols\deng_lu\login_req.cs" />
+    <Compile Include="message\Protocols\deng_lu\login_res.cs" />
+    <Compile Include="message\Protocols\deng_lu\login_weixin_req.cs" />
+    <Compile Include="message\Protocols\deng_lu\login_weixin_res.cs" />
+    <Compile Include="message\Protocols\deng_lu\register_req.cs" />
+    <Compile Include="message\Protocols\deng_lu\register_res.cs" />
+    <Compile Include="message\Protocols\gong_yi\benefit_detail_req.cs" />
+    <Compile Include="message\Protocols\gong_yi\benefit_detail_res.cs" />
+    <Compile Include="message\Protocols\gong_yi\benefit_head_req.cs" />
+    <Compile Include="message\Protocols\gong_yi\benefit_head_res.cs" />
+    <Compile Include="message\Protocols\gong_yi\benefit_proof_discuss_req.cs" />
+    <Compile Include="message\Protocols\gong_yi\benefit_proof_discuss_res.cs" />
+    <Compile Include="message\Protocols\jian_yi\advise_cteate_req.cs" />
+    <Compile Include="message\Protocols\jian_yi\advise_cteate_res.cs" />
+    <Compile Include="message\Protocols\jie_gou\info_benefit_head_item.cs" />
+    <Compile Include="message\MsgCodeId.cs" />
+    <Compile Include="message\MsgHandle.cs" />
+    <Compile Include="message\MsgProcessor.cs" />
+    <Compile Include="message\MsgBase.cs" />
+    <Compile Include="message\Protocols\jie_gou\info_bored_head_item.cs" />
+    <Compile Include="message\Protocols\jie_gou\info_bored_record_item.cs" />
+    <Compile Include="message\Protocols\jie_gou\info_user.cs" />
+    <Compile Include="message\Protocols\wu_liao\bored_head_items_req.cs" />
+    <Compile Include="message\Protocols\wu_liao\bored_head_items_res.cs" />
+    <Compile Include="message\Protocols\wu_liao\bored_head_item_add_req.cs" />
+    <Compile Include="message\Protocols\wu_liao\bored_head_item_add_res.cs" />
+    <Compile Include="message\Protocols\wu_liao\bored_record_items_req.cs" />
+    <Compile Include="message\Protocols\wu_liao\bored_record_items_res.cs" />
+    <Compile Include="message\Protocols\wu_liao\bored_record_item_add_req.cs" />
+    <Compile Include="message\Protocols\wu_liao\bored_record_item_add_res.cs" />
+    <Compile Include="net\NetHttp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="dbfile\DBManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbfile\1文件夹说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dbfile\data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GameDb\GameDb.csproj">
+      <Project>{0acc664e-12fc-4daa-af22-d7810ce661af}</Project>
+      <Name>GameDb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/app_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showphoto"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="X"
+            android:id="@+id/btn_close"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="UP"
+            android:id="@+id/btn_up"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="显"
+            android:id="@+id/btn_show"
+            />
+    </LinearLayout>
+
+
+
+</FrameLayout>

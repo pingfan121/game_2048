@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">蝴蝶</string>
+    <string name="mod_benefit">公益模块</string>
+    <string name="mod_benefit_detail">公益详细模块</string>
+    <string name="mod_tease">吐槽模块</string>
+    <string name="title_activity_login">登录</string>
+
+    <string name="take_photo">拍照</string>
+    <string name="pick_photo">相册</string>
+    <string name="attachToContact">选择</string>
+    <string name="photoPickerNotFoundText1">没有找到1</string>
+    <string name="photoPickerNotFoundText">没有找到</string>
+    <string name="nocard">没有SD卡</string>
+
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">注册</string>
+
+    <string name="btn_recorder_normal">好无聊,我也来说两句</string>
+    <string name="btn_recorder_recording">松开结束</string>
+    <string name="btn_recorder_want_cancel">松开手指 取消发送</string>
+
+</resources>

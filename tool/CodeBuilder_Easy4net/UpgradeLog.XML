@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="EntityCodeBuilder">
+</Property><Property Name="解决方案文件" Value="D:\WorkSpace\CodeBuilder_Easy4net\EntityCodeBuilder.sln">
+</Property><Property Name="Date" Value="2015年11月23日">
+</Property><Property Name="Time" Value="12:25">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="EntityCodeBuilder.sln" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\EntityCodeBuilder.sln">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\EntityCodeBuilder.csproj" Description="项目文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\EntityCodeBuilder.csproj">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\CreateFileHelper.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\CreateFileHelper.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Form1.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Form1.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Form1.Designer.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Program.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Program.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\TableHelper.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\TableHelper.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\TypeHelper.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\TypeHelper.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Properties\Resources.Designer.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Properties\Settings.Designer.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\App.config" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\App.config">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Properties\Settings.settings" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Form1.resx" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Form1.resx">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\Properties\Resources.resx" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\WindowsDemo\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="EntityCodeBuilder" Source="WindowsDemo\EntityCodeBuilder.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="EntityCodeBuilder" Source="WindowsDemo\EntityCodeBuilder.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="Entity" Source="Entity\Entity.csproj" Description="项目文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Entity\Entity.csproj">
+</Event><Event ErrorLevel="0" Project="Entity" Source="Entity\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Entity\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Entity" Source="Entity\TableColumn.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Entity\TableColumn.cs">
+</Event><Event ErrorLevel="0" Project="Entity" Source="Entity\TableName.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Entity\TableName.cs">
+</Event><Event ErrorLevel="0" Project="Entity" Source="Entity\Entity.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="Entity" Source="Entity\Entity.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Mast.csproj" Description="项目文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Mast.csproj">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\ColumnInfo.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\ColumnInfo.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\CommonUtils.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\CommonUtils.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\DbCondition.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\DbCondition.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\DbEntityUtils.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\DbEntityUtils.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\DbKeywords.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\DbKeywords.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\DynamicCalls.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\DynamicCalls.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\EntityHelper.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\EntityHelper.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\IdInfo.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\IdInfo.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\Map.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\Map.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\PageResult.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\PageResult.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\ParamMap.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\ParamMap.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\ReflectionHelper.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\ReflectionHelper.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\SQLBuilderHelper.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\SQLBuilderHelper.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\TableInfo.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\TableInfo.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Common\TypeUtils.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Common\TypeUtils.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\CustomAttributes\ColumnAttribute.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\CustomAttributes\ColumnAttribute.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\CustomAttributes\GenerationType.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\CustomAttributes\GenerationType.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\CustomAttributes\IdAttribute.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\CustomAttributes\IdAttribute.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\CustomAttributes\TableAttribute.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\CustomAttributes\TableAttribute.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\DBUtility\AdoHelper.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\DBUtility\AdoHelper.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\DBUtility\DatabaseType.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\DBUtility\DatabaseType.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\DBUtility\DbFactory.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\DBUtility\DbFactory.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\DBUtility\DbOperateType.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\DBUtility\DbOperateType.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\DBUtility\DbTypeConvert.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\DBUtility\DbTypeConvert.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Session\Session.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Session\Session.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Session\SessionFactory.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Session\SessionFactory.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Session\SessionThreadLocal.cs" Description="文件已成功备份为 D:\WorkSpace\CodeBuilder_Easy4net\Backup\Mast\Session\SessionThreadLocal.cs">
+</Event><Event ErrorLevel="0" Project="Mast" Source="Mast\Mast.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="Mast" Source="Mast\Mast.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="" Source="EntityCodeBuilder.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="EntityCodeBuilder.sln" Description="Converted">
+</Event></UpgradeLog>

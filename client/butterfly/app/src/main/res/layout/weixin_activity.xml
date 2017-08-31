@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/main_aaa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--这里是标题栏-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/module_title"
+                layout="@layout/module_title"
+                >
+            </include>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信登录?"/>
+        <!--这里是标题栏-->
+
+    </LinearLayout>
+
+    <!--下面这里是滑动菜单-->
+    <!--上面这里是滑动菜单-->
+
+
+</android.support.v4.widget.DrawerLayout>

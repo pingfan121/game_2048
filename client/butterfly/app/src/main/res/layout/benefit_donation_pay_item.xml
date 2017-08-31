@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:forceHasOverlappingRendering="false"
+    android:paddingRight="20dp"
+    android:background="@color/app_white">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/icon"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="支付宝"
+        android:id="@+id/t_name"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/select"
+        android:layout_gravity="center_vertical"
+        android:layout_row="0"
+        android:layout_column="15" />
+
+</GridLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/main_aaa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--这里是标题栏-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/module_title"
+                layout="@layout/module_title"
+                >
+                </include>
+
+        </FrameLayout>
+        <!--这里是标题栏-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/fragment_view"
+                    layout="@layout/fragment_view"
+                    >
+
+                </include>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/control_view"
+                android:background="@color/app_mod_ground">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layer1">
+
+
+                <include
+                    android:id="@+id/textView"
+                    layout="@layout/test_textview"
+
+                    />
+
+                <include
+                    android:id="@+id/editView"
+                    layout="@layout/test_editview"
+                    />
+
+                <include
+                    android:id="@+id/show_photo"
+                    layout="@layout/test_showphoto"
+                    >
+
+                </include>
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layer2">
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:id="@+id/layer3">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layer4">
+
+            </FrameLayout>
+
+            <!--第五层-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layer5">
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--下面这里是滑动菜单-->
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:id="@+id/menulayout">
+
+
+        <include
+            android:id="@+id/module_menu"
+            layout="@layout/module_menu"
+            />
+
+
+    </FrameLayout>
+    <!--上面这里是滑动菜单-->
+
+
+</android.support.v4.widget.DrawerLayout>

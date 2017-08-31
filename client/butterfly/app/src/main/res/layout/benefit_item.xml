@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c1c1bc"
+    android:paddingTop="5dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="救助对象: 王尼玛"
+        android:id="@+id/t_name"
+        android:textColor="@color/app_black"
+        android:textSize="@dimen/benefit_item_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所在位置: 河南省商丘市睢县中医院"
+        android:id="@+id/t_addr"
+        android:textColor="@color/app_black"
+        android:textSize="@dimen/benefit_item_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="救助原因: 请点击查看详情"
+        android:id="@+id/t_reason"
+        android:textColor="@color/app_black"
+        android:textSize="@dimen/benefit_item_text"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="需要金额: 10万"
+            android:id="@+id/t_needmoney"
+            android:textColor="@color/app_black"
+            android:textSize="@dimen/benefit_item_text"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="以筹金额:80999"
+            android:id="@+id/t_nowmoney"
+            android:textColor="@color/app_black"
+            android:textSize="@dimen/benefit_item_text"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <pf.com.butterfly.component.BenefitItemBar
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:id="@+id/bar_1" />
+
+</LinearLayout>
