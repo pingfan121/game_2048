@@ -24,7 +24,7 @@ namespace hudie.sql
             DbConfig config = new DbConfig();
             config.Host = baseaddr;
             config.Port = baseport;
-            config.Name = "app_benefit";
+            config.Name = "game_2048";
             config.User = baseuser;
             config.Pwd = basepass;
             config.CharSet = "utf8";

@@ -68,105 +68,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="app\GlobalApp.cs" />
-    <Compile Include="app\info\info_2048_rank.cs" />
-    <Compile Include="app\info\info_bored.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\info\info_bored_voice.cs" />
-    <Compile Include="app\info\info_test.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\info\res_advice_add.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\info\res_bored_add.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\info\res_bored_addvoice.cs" />
-    <Compile Include="app\info\res_bored_getlist.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\info\res_bored_voicelist.cs" />
-    <Compile Include="app\info\res_g2048_rank.cs" />
-    <Compile Include="app\info\res_user_login.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\info\res_user_test2.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\info\res_user_userinfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\info\res_user_wx_login.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="app\info\info_chat.cs" />
+    <Compile Include="app\info\info_rank.cs" />
+    <Compile Include="app\info\res_chat_add.cs" />
+    <Compile Include="app\info\res_chat_list.cs" />
+    <Compile Include="app\info\res_game_rank.cs" />
+    <Compile Include="app\info\res_game_score.cs" />
+    <Compile Include="app\info\res_user_wx_login.cs" />
     <Compile Include="app\MapAppMsg.cs" />
     <Compile Include="app\MapAppMsg2.cs" />
-    <Compile Include="app\module\advice\advice.cs" />
-    <Compile Include="app\module\advice\advice_add.cs" />
-    <Compile Include="app\module\game\g2048\g2048.cs" />
-    <Compile Include="app\module\game\g2048\g2048_rank.cs" />
+    <Compile Include="app\module\chat\chat.cs" />
+    <Compile Include="app\module\chat\chat_add.cs" />
+    <Compile Include="app\module\chat\chat_list.cs" />
+    <Compile Include="app\module\game\game.cs" />
+    <Compile Include="app\module\game\game_rank.cs" />
+    <Compile Include="app\module\game\game_score.cs" />
     <Compile Include="app\module\modulebase.cs" />
     <Compile Include="app\module\user\user.cs" />
     <Compile Include="app\module\user\user_wx_login.cs" />
-    <Compile Include="cache\Cache.cs" />
-    <Compile Include="cache\CacheData.cs" />
-    <Compile Include="cache\TokenCache.cs" />
-    <Compile Include="dbfile\dblogic\benefit\TbAppAdvice.cs" />
-    <Compile Include="dbfile\dblogic\benefit\TbAppLoginLog.cs" />
-    <Compile Include="dbfile\dblogic\benefit\TbAppUser.cs" />
-    <Compile Include="dbfile\dblogic\benefit\TbBoredHead.cs" />
-    <Compile Include="dbfile\dblogic\benefit\TbBoredVoice.cs" />
-    <Compile Include="dbfile\dblogic\benefit\TbGame2048Rank.cs" />
     <Compile Include="dbfile\sql_struct.cs" />
+    <Compile Include="dbfile\TbChat.cs" />
+    <Compile Include="dbfile\TbRank.cs" />
+    <Compile Include="dbfile\TbUser.cs" />
     <Compile Include="enum\EnumMsgState.cs" />
     <Compile Include="app\GameApp.cs" />
-    <Compile Include="message\ProtocolsReq\deng_lu\login_weixin_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\jian_yi\advise_cteate_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\gong_yi\benefit_detail_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\gong_yi\benefit_head_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\gong_yi\benefit_proof_discuss_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\gong_yi\benefit_theme_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\deng_lu\login_req_fun.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="message\ProtocolsReq\deng_lu\register_req_fun.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="message\ProtocolsReq\wu_liao\bored_head_items_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\wu_liao\bored_head_item_add_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\wu_liao\bored_record_items_req_fun.cs" />
-    <Compile Include="message\ProtocolsReq\wu_liao\bored_record_item_add_req_fun.cs" />
-    <Compile Include="message\Protocols\deng_lu\login_req.cs" />
-    <Compile Include="message\Protocols\deng_lu\login_res.cs" />
-    <Compile Include="message\Protocols\deng_lu\login_weixin_req.cs" />
-    <Compile Include="message\Protocols\deng_lu\login_weixin_res.cs" />
-    <Compile Include="message\Protocols\deng_lu\register_req.cs" />
-    <Compile Include="message\Protocols\deng_lu\register_res.cs" />
-    <Compile Include="message\Protocols\gong_yi\benefit_detail_req.cs" />
-    <Compile Include="message\Protocols\gong_yi\benefit_detail_res.cs" />
-    <Compile Include="message\Protocols\gong_yi\benefit_head_req.cs" />
-    <Compile Include="message\Protocols\gong_yi\benefit_head_res.cs" />
-    <Compile Include="message\Protocols\gong_yi\benefit_proof_discuss_req.cs" />
-    <Compile Include="message\Protocols\gong_yi\benefit_proof_discuss_res.cs" />
-    <Compile Include="message\Protocols\jian_yi\advise_cteate_req.cs" />
-    <Compile Include="message\Protocols\jian_yi\advise_cteate_res.cs" />
-    <Compile Include="message\Protocols\jie_gou\info_benefit_head_item.cs" />
-    <Compile Include="message\MsgCodeId.cs" />
-    <Compile Include="message\MsgHandle.cs" />
-    <Compile Include="message\MsgProcessor.cs" />
-    <Compile Include="message\MsgBase.cs" />
-    <Compile Include="message\Protocols\jie_gou\info_bored_head_item.cs" />
-    <Compile Include="message\Protocols\jie_gou\info_bored_record_item.cs" />
-    <Compile Include="message\Protocols\jie_gou\info_user.cs" />
-    <Compile Include="message\Protocols\wu_liao\bored_head_items_req.cs" />
-    <Compile Include="message\Protocols\wu_liao\bored_head_items_res.cs" />
-    <Compile Include="message\Protocols\wu_liao\bored_head_item_add_req.cs" />
-    <Compile Include="message\Protocols\wu_liao\bored_head_item_add_res.cs" />
-    <Compile Include="message\Protocols\wu_liao\bored_record_items_req.cs" />
-    <Compile Include="message\Protocols\wu_liao\bored_record_items_res.cs" />
-    <Compile Include="message\Protocols\wu_liao\bored_record_item_add_req.cs" />
-    <Compile Include="message\Protocols\wu_liao\bored_record_item_add_res.cs" />
+    <Compile Include="net\MsgBase.cs" />
     <Compile Include="net\NetHttp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -178,9 +104,7 @@
   <ItemGroup>
     <Content Include="dbfile\1文件夹说明.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="dbfile\data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\GameDb\GameDb.csproj">
       <Project>{0acc664e-12fc-4daa-af22-d7810ce661af}</Project>

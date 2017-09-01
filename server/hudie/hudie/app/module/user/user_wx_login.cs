@@ -11,7 +11,6 @@ using GameLib.Util;
 using GameDb.Logic;
 using hudie.app.info;
 using GameLib.Database;
-using hudie.cache;
 
 namespace hudie.app.module
 {
@@ -74,7 +73,7 @@ namespace hudie.app.module
 
                     sql_struct sql = new sql_struct();
 
-                    DbSelect<TbAppUser> select = new DbSelect<TbAppUser>(null, "select * from app_user where wx_id='" + info.unionid + "';",null);
+                    DbSelect<TbUser> select = new DbSelect<TbUser>(null, "select * from user where device_id='" + reqinfo.req_params["device_id"] + "';", null);
 
                     sql.httpinfo = reqinfo;
                     sql.data1 = info;
@@ -97,30 +96,24 @@ namespace hudie.app.module
             HttpInfo reqinfo = sql.httpinfo;
             weixin_info info = sql.data1 as weixin_info;
 
-            DbSelect<TbAppUser> user_select = sql.cmd as DbSelect<TbAppUser>;
+            DbSelect<TbUser> user_select = sql.cmd as DbSelect<TbUser>;
 
-            TbAppUser user;
+            TbUser user;
 
             if(user_select.ListRecord == null || user_select.ListRecord.Count == 0)
             {
                     //没有查询到数据  插入一条
-
-                    user = new TbAppUser();
+                    user = new TbUser();
                     user.Id = ObjectId.NewObjectId().ToString();
                     user.WxId = info.unionid;
-                    user.Sex = info.sex;
-                    user.Mobile = "";
-                    user.Mail = "";
-                    user.Pass = "";
-                    user.WbId = "";
                     user.Name = info.nickName;
-                    user.Head = info.headimgurl;
+                    user.DeviceId = reqinfo.req_params["device_id"];
 
                     user.Createtime = DateUtil.ToUnixTime2(DateTime.Now);
 
                     sql = new sql_struct();
 
-                    sql.cmd = new DbInsert<TbAppUser>(null, user, null);
+                    sql.cmd = new DbInsert<TbUser>(null, user, null);
 
                     app.db_Insert(sql);
 
@@ -132,39 +125,22 @@ namespace hudie.app.module
                 user = user_select.ListRecord[0];
             }
 
-            //记录一条登录日志
-            try
-            {
-                TbAppLoginLog log = new TbAppLoginLog();
-                log.Id = ObjectId.NewObjectId().ToString();
-                log.UserId = user.Id;
-                log.Ip = reqinfo.context.Request.UserHostAddress.Split(':')[0];
-                log.CreateTime = DateUtil.ToUnixTime2(DateTime.Now);
-                sql_struct sql2 = new sql_struct();
+            //更新排行名字
+            string sql_str = String.Format("update rank set name='{0}',set face='{1}' where device_id ='{2}';", info.nickName, info.headimgurl,reqinfo.req_params["device_id"]);
 
-                sql2.cmd = new DbInsert<TbAppLoginLog>(null, log, null);
-
-                app.db_Insert(sql2);
-            }
-            catch
-            {
-
-            }
-
-            //记录缓存
-            TokenCache.AddToken(user.Id, user);
+            DbSelect<TbRank> select = new DbSelect<TbRank>(null, sql_str, null);
+            sql.cmd = select;
+            app.db_Select(sql);
 
             //做一些其他事情....
 
             res_user_wx_login res = new res_user_wx_login();
 
             res.name = info.nickName;
-            res.sex = info.sex;
             res.face = info.headimgurl;
             res.token = user.Id;
 
             app.sendMsg(reqinfo, res);
-           
         }
 	}
 }

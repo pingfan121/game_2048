@@ -1,7 +1,6 @@
 ﻿using Enum;
 using GameDb.Logic;
 using GameLib.Util;
-using messages;
 using System;
 using System.Collections;
 using System.Collections.Concurrent;
@@ -18,11 +17,9 @@ namespace hudie.net
 {
     public class HttpInfo
     {
-       // public string modpath;
         public string funpath;
         public HttpListenerContext context;
         public Dictionary<string, string> req_params = new Dictionary<string, string>();
-        public TbAppUser user_data;
         
     }
     class NetHttp
@@ -31,10 +28,7 @@ namespace hudie.net
 
         private static HttpListener listener;         //http协议
 
-        private static int port=10012;
-
-      //  private static string key = "123456";
-
+        private static int port=30002;
 
         public static ConcurrentQueue<HttpInfo> http_data = new ConcurrentQueue<HttpInfo>();
         //开始启动

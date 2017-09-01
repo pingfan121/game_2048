@@ -57,6 +57,13 @@ namespace Easy4net.Session
             return strTableName;
         }
         static public Dictionary<Type, TableInfo> dics = new Dictionary<Type, TableInfo>();
+
+        public void reconnect()
+        {
+            DBLOG.warn("Session数据库>>>>ping不通，重连");
+            _connect.Close();
+            _connect.Open();
+        }
         /// <summary>
         /// 获取列属性
         /// </summary>
@@ -152,6 +159,11 @@ namespace Easy4net.Session
         public ConnectionState State
         {
             get { return state; }
+        }
+
+        public bool Ping()
+        {
+            return ((MySqlConnection)_connect).Ping();
         }
         public void Open()
         {

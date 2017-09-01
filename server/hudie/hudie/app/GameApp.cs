@@ -4,10 +4,8 @@ using GameDb.Util;
 using GameLib.Database;
 using GameLib.Util;
 using hudie.app;
-using hudie.cache;
 using hudie.net;
 using hudie.sql;
-using messages;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -59,12 +57,6 @@ namespace hudie
             Thread sql_write_thread = new Thread(sql_write);
             sql_write_thread.IsBackground = true;
             sql_write_thread.Start();
-
-            //测试账号
-            DbSelect<TbAppUser> select = new DbSelect<TbAppUser>(connect, "select * from app_user where id='" + "111111" + "';", null);
-            select.processRequest();
-
-            TokenCache.AddToken(select.ListRecord[0].Id, select.ListRecord[0]);
         }
 
         public void addMsg(HttpInfo info)
@@ -138,6 +130,8 @@ namespace hudie
 
                 sql_struct sql = null;
 
+                int a = 0;
+
                 if(sql_data_back.TryDequeue(out sql) == true)
                 {
                     if(sql.fun != null)
@@ -149,6 +143,16 @@ namespace hudie
                 else
                 {
                     Thread.Sleep(20);
+
+                    a++;
+                }
+
+
+                if(a > 100000)
+                {
+                    a = 0;
+
+                    ((DbMySql)connect).Ping();
                 }
             }
         }
@@ -280,20 +284,6 @@ namespace hudie
           //  sql.cmd.DbConnect = this.connect;
             sql_write_data.Enqueue(sql);
         }
-
-
-        //验证token
-        public TbAppUser getUserData(HttpInfo httpinfo)
-        {
-
-            if(httpinfo.req_params.ContainsKey("token"))
-            {
-                return TokenCache.getUserData(httpinfo.req_params["token"]);
-            }
-
-            return null;
-        }
-
     }
 
 }

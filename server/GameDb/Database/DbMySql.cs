@@ -33,6 +33,16 @@ namespace GameLib.Database
             _poolSession = new Session();
         }
 
+
+        public void Ping()
+        {
+            if(_poolSession.Ping() == false)
+            {
+
+                _poolSession.reconnect();
+            }
+        }
+
         public bool Connected {
             get
             {

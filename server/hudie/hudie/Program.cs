@@ -1,9 +1,6 @@
 ﻿using GameLib.Util;
 using hudie.app;
-using hudie.cache;
 using hudie.net;
-using messages;
-using messages.Protocols;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +17,6 @@ namespace hudie
             try
             {
                 //初始化消息序列
-               MsgHandle.getInstance().init();
                NetHttp.Start();
 
                GlobalApp.init();
@@ -45,12 +41,6 @@ namespace hudie
         public static void OtherUpdate()
         {
             long time = DateUtil.NowToToUnixTime2();
-
-          //  Cache.update(time);
-
-            
-
-            TokenCache.update(time);
         }
 
     }

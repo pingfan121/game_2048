@@ -12,7 +12,7 @@ namespace hudie.app
     {
         //app消息的派发
 
-        private static int proc_count = 2;
+        private static int proc_count = 1;
 
         private static GameApp[] apps = new GameApp[proc_count];
 
