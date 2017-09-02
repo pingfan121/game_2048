@@ -20,7 +20,7 @@ namespace hudie.app.module
             sql_struct sql = new sql_struct();
 
             DbSelect<TbUser> tb_user = new DbSelect<TbUser>(null, "select * from user where device_id='" + reqinfo.req_params["device_id"] + "';", null);
-
+            sql.httpinfo = reqinfo;
             sql.cmd = tb_user;
             sql.fun = add_user_back;
 
@@ -29,7 +29,7 @@ namespace hudie.app.module
 
         private void add_user_back(sql_struct sql)
         {
-             HttpInfo reqinfo = sql.httpinfo;
+            HttpInfo reqinfo = sql.httpinfo;
             DbSelect<TbUser> tb_user = sql.cmd as  DbSelect<TbUser>;
 
             if(tb_user.ListRecord == null || tb_user.ListRecord.Count==0)
@@ -52,6 +52,8 @@ namespace hudie.app.module
 
                 sql.cmd = tb_chat;
                 sql.fun = add_insert_back;
+
+                app.db_Insert(sql);
             }
         }
 

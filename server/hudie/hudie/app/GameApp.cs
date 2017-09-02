@@ -67,23 +67,23 @@ namespace hudie
 
         public void Run()
         {
-
             while (true)
             {
-                HttpInfo msg = null;
 
-                if (msg_data.TryDequeue(out msg)==true)
+                try
                 {
-                   
-                  //  if (msg_map.class_map.ContainsKey(msg.modpath)==true)
-                  //  {
+                    HttpInfo msg = null;
+
+                    if(msg_data.TryDequeue(out msg) == true)
+                    {
+
                         if(msg_map.msg_map.ContainsKey(msg.funpath) == true)
                         {
                             try
                             {
                                 if(msg_map.req_map.ContainsKey(msg.funpath))
                                 {
-                                    if(msg.req_params==null)
+                                    if(msg.req_params == null)
                                     {
                                         sendErrorMsg(msg, EnumMsgState.param_err);
                                         continue;
@@ -99,13 +99,13 @@ namespace hudie
                                         }
                                     }
 
-                                    if(flag==1)
+                                    if(flag == 1)
                                     {
                                         sendErrorMsg(msg, EnumMsgState.param_err);
                                         continue;
                                     }
                                 }
-                                
+
                                 msg_map.msg_map[msg.funpath](msg);
                             }
                             catch(Exception ex)
@@ -121,40 +121,49 @@ namespace hudie
                         {
                             sendErrorMsg(msg, EnumMsgState.fun_err);
                         }
-//                     }
-//                     else
-//                     {
-//                         sendErrorMsg(msg, EnumMsgState.module_err);
-//                     }
-                }
-
-                sql_struct sql = null;
-
-                int a = 0;
-
-                if(sql_data_back.TryDequeue(out sql) == true)
-                {
-                    if(sql.fun != null)
-                    {
-                        sql.fun(sql);
                     }
-                   
+
+                    sql_struct sql = null;
+
+                    int a = 0;
+
+                    if(sql_data_back.TryDequeue(out sql) == true)
+                    {
+                        if(sql.fun != null)
+                        {
+                            try
+                            {
+                                sql.fun(sql);
+                            }
+                            catch(Exception ex)
+                            {
+                                Log.error(ex);
+                            }
+                           
+                        }
+
+                    }
+                    else
+                    {
+                        Thread.Sleep(20);
+
+                        a++;
+                    }
+
+
+                    if(a > 100000)
+                    {
+                        a = 0;
+
+                        ((DbMySql)connect).Ping();
+                    }
                 }
-                else
+                catch(Exception ex)
                 {
-                    Thread.Sleep(20);
-
-                    a++;
+                    Log.error(ex);
                 }
-
-
-                if(a > 100000)
-                {
-                    a = 0;
-
-                    ((DbMySql)connect).Ping();
-                }
-            }
+             }
+             
         }
 
         private void sql_read()

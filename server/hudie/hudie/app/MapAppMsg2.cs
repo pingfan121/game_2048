@@ -31,8 +31,7 @@ namespace hudie.app
 			req_map.Add("hudie.app.module.chat.add",new List<string>());
 			req_map["hudie.app.module.user.wx_login"].Add("wx_token");
 			req_map["hudie.app.module.game.rank"].Add("type");
-			req_map["hudie.app.module.game.score"].Add("token");
-			req_map["hudie.app.module.game.score"].Add("device");
+			req_map["hudie.app.module.game.score"].Add("device_id");
 			req_map["hudie.app.module.game.score"].Add("type");
 			req_map["hudie.app.module.game.score"].Add("score");
 			req_map["hudie.app.module.chat.add"].Add("content");

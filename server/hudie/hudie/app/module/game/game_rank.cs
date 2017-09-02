@@ -29,7 +29,7 @@ namespace hudie.app.module
                  type="six_max_score";
             }
 
-            string str = String.Format("select * from rank order by {1} desc limit 20;",type);
+            string str = String.Format("select * from rank order by {0} desc limit 20;",type);
 
 
             DbSelect<TbRank> dbselect = new DbSelect<TbRank>(null, str, null);
