@@ -63,6 +63,7 @@ namespace hudie.app.module
                     res.list[count] = new info_rank();
                     res.list[count].face = theme.Face;
                     res.list[count].name = theme.Name;
+                    res.list[count].rank = count+1;
 
                     if(reqinfo.req_params["type"] == "4")
                     {
